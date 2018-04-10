@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>DS Recruitment Portal</title>
+    <link rel="stylesheet" href="portal.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="portal.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        $(document).ready(function(){
+            $("#b1").on('mouseover', function(){ 
+                $("#d1").css({'display':'block'});
+                $("#d1").animate({
+                    opacity: 1,
+                },400);
+            });
+
+            $("#b1").on('mouseout', function(){
+                $("#d1").animate({
+                    opacity: 0,
+                },100);
+                setTimeout(function(){$("#d1").css({'display':'none'});},110);
+            });
+
+            $("#b2").on('mouseover', function(){
+                $("#d2").css({'display':'block'});
+                $("#d2").animate({
+                    opacity: 1,
+                },400);
+            });
+
+            $("#b2").on('mouseout', function(){
+                $("#d2").animate({
+                    opacity: 0,
+                },100);
+                setTimeout(function(){$("#d2").css({'display':'none'});},110);
+            });
+        });
+
+    </script>
+    </head>
+    <body>
+        <div class="">
+            <div class="body">
+                <img src="recruitments/images/logo.png" class="logo">
+                <span class="recruiting">We are<br>Recruiting</span>
+                <a href="https://www.facebook.com/designstudio.iitr/" target="_blank" class="fb" style="text-decoration: none;color: black;"><i class="fa fa-facebook-f" style="font-size: 1.65rem; position: fixed; bottom:4rem;left:6rem;color: black"></i></a>
+                <a href="https://www.instagram.com/ds_iitr/" target="_blank" class="insta" style="text-decoration: none;color: black;"><i class="fa fa-instagram" style="font-size: 1.7rem; position: fixed; bottom:4rem;left:9rem;color: black"></i></a>
+
+    <section class="main col-sm-8 offset-sm-2" id="1">
+        <img src="recruitments/images/product.gif" class="image">
+        <div class="bodytext">
+            <span class="heading">Product</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Designers</span>
+            </span>
+            <p class="intro"> Product designer use their know-how of design, engineering and manufacturing to create new, improved products which offer better solutions to daily problems.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+    <section class="main col-sm-8 offset-sm-2" id="2">
+        <img src="recruitments/images/ui-ux.gif" class="image">
+        <div class="bodytext">
+            <span class="heading">UI/UX</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Designers</span>
+            </span>
+            <p class="intro"> User interface is everything with which a user interacts while user experience is the manner in which a user interacts with a product to reach the objective.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+    <section class="main col-sm-8 offset-sm-2" id="3">
+        <img src="recruitments/images/graphic.gif" class="image">
+        <div class="bodytext">
+            <span class="heading">Graphic</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Designers</span>
+            </span>
+            <p class="intro">It involves making visually appealing art which also conveys some information about its accompanying product to the user.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+    <section class="main col-sm-8 offset-sm-2" id="4">
+        <img src="recruitments/images/game1.gif" class="image">
+        <div class="bodytext">
+            <span class="heading">Game</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Developers</span>
+            </span>
+            <p class="intro"> Game developers create compelling storylines and characters. They use their knowledge of the game engine to create interactive environments which aid the user in having a good experience with the game.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+    <section class="main col-sm-8 offset-sm-2" id="5">
+        <img src="recruitments/images/3Dani.gif" class="image">
+        <div class="bodytext">
+            <span class="heading" id="ani">3D Graphics</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Animators</span>
+            </span>
+            <p class="intro">It involves creating three dimensional models, using motion capture data to make lifelike animations, photorealistic rendering, compositing and designing virtual environments.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+    <section class="main col-sm-8 offset-sm-2" id="6">
+        <img src="recruitments/images/ar-vr.gif" class="image">
+        <div class="bodytext">
+            <span class="heading">AR/VR</span>
+            <span class="sub">
+                <span class="hl"></span>
+                <span class="subtext">Designers</span>
+            </span>
+            <p class="intro">Augmented reality and virtual reality involves creating virtual environments which simulate the real world and give users a chance to enjoy experience that they might not be able to experience in real life.</p>
+            <span class="apply"><a href="#">Apply</a></span>
+        </div>
+    </section>
+
+        <div class="right">
+            <div class="contacts">
+                <div class="dropdown">
+      <span class="dropbtn" id="b2">Schedule</span>
+      <img src="recruitments/images/schedule.png" class="dropdown-schedule" id="d2">
+      </div>
+                <div class="dropdown">
+      <span class="dropbtn" id="b1">Contact</span>
+      <img src="recruitments/images/contacts.png" class="dropdown-contacts" id="d1">
+          </div>
+      </div>
+            <div class="corousel">
+                <div id="scroller-circle">
+                    <div class="circular-scrolls" id="0" style=""></div>
+                    <div class="circular-scrolls" id="1" style=""></div>
+                    <div class="circular-scrolls filled-scrolls" id="2" style="background-color: rgb(18, 16, 23);"></div>
+                    <div class="circular-scrolls" id="3" style=""></div>
+                    <div class="circular-scrolls" id="4" style=""></div>
+                    <div class="circular-scrolls" id="5" style=""></div>
+                    <div class="circular-scrolls" id="6" style=""></div>
+                </div>
+            </div> 
+            <div class="scrolldown">
+                <span class="scroll">Scroll</span>
+                <img src="recruitments/images/arrow.png" class="arrow">
+            </div>
+                   </div>  
+        </div>
+        </div>
+    </body>
+</html>
